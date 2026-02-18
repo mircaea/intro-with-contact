@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import {
   Box,
   Typography,
@@ -13,7 +14,6 @@ import {
   Chip,
 } from '@mui/material';
 import { Edit as EditIcon } from '@mui/icons-material';
-import NextLink from 'next/link';
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 import type { Page } from '@/types';
@@ -28,6 +28,7 @@ const predefinedPages = [
 ];
 
 export default function AdminPagesPage() {
+  const router = useRouter();
   const [pages, setPages] = useState<Page[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -70,6 +71,10 @@ export default function AdminPagesPage() {
     });
   };
 
+  const handlePageClick = (slug: string) => {
+    router.push(`/admin/pages/${slug}`);
+  };
+
   return (
     <Box>
       <Typography variant="h4" gutterBottom>
@@ -93,11 +98,8 @@ export default function AdminPagesPage() {
                 <ListItem
                   key={page.slug}
                   divider={index < mergedPages.length - 1}
-                  component={NextLink}
-                  href={`/admin/pages/${page.slug}`}
+                  onClick={() => handlePageClick(page.slug)}
                   sx={{
-                    textDecoration: 'none',
-                    color: 'inherit',
                     '&:hover': {
                       bgcolor: 'action.hover',
                     },
