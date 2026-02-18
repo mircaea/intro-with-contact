@@ -118,11 +118,7 @@ export default function AdminPagesPage() {
                       }
                     />
                     <ListItemSecondaryAction>
-                      <IconButton
-                        edge="end"
-                        component={NextLink}
-                        href={`/admin/pages/${page.slug}`}
-                      >
+                      <IconButton edge="end">
                         <EditIcon />
                       </IconButton>
                     </ListItemSecondaryAction>
