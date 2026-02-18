@@ -1,0 +1,78 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Me",
+    "services": "Services",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "booking": "Book Appointment"
+  },
+  "common": {
+    "readMore": "Read more",
+    "bookNow": "Book now",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success!"
+  },
+  "home": {
+    "hero": {
+      "title": "Welcome",
+      "subtitle": "Psychotherapy Practice",
+      "cta": "Schedule a consultation"
+    },
+    "about": {
+      "title": "About Me",
+      "readMore": "Learn more"
+    },
+    "services": {
+      "title": "Services",
+      "viewAll": "View all services"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Learn more about my experience and therapeutic approach."
+  },
+  "services": {
+    "title": "Services",
+    "description": "Discover the psychotherapy services I offer."
+  },
+  "pricing": {
+    "title": "Pricing",
+    "description": "Information about psychotherapy session costs.",
+    "perSession": "per session",
+    "package": "package"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Send me a message and I will get back to you as soon as possible.",
+    "form": {
+      "name": "Full name",
+      "email": "Email address",
+      "phone": "Phone (optional)",
+      "message": "Your message",
+      "submit": "Send message",
+      "success": "Your message has been sent successfully!",
+      "error": "An error occurred. Please try again."
+    }
+  },
+  "booking": {
+    "title": "Book Appointment",
+    "description": "Choose a date and time that works for you.",
+    "selectDate": "Select date",
+    "selectTime": "Select time",
+    "selectService": "Select service",
+    "yourDetails": "Your details",
+    "confirm": "Confirm booking",
+    "success": "Your appointment has been scheduled!",
+    "error": "An error occurred. Please try again."
+  },
+  "footer": {
+    "copyright": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions"
+  }
+}

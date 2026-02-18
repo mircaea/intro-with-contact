@@ -1,0 +1,78 @@
+{
+  "nav": {
+    "home": "Acasa",
+    "about": "Despre Mine",
+    "services": "Servicii",
+    "pricing": "Tarife",
+    "contact": "Contact",
+    "booking": "Programare"
+  },
+  "common": {
+    "readMore": "Citeste mai mult",
+    "bookNow": "Programeaza-te acum",
+    "submit": "Trimite",
+    "cancel": "Anuleaza",
+    "save": "Salveaza",
+    "loading": "Se incarca...",
+    "error": "A aparut o eroare",
+    "success": "Succes!"
+  },
+  "home": {
+    "hero": {
+      "title": "Bine ati venit",
+      "subtitle": "Cabinet de Psihoterapie",
+      "cta": "Programeaza o consultatie"
+    },
+    "about": {
+      "title": "Despre Mine",
+      "readMore": "Afla mai multe"
+    },
+    "services": {
+      "title": "Servicii",
+      "viewAll": "Vezi toate serviciile"
+    }
+  },
+  "about": {
+    "title": "Despre Mine",
+    "description": "Afla mai multe despre experienta si abordarea mea terapeutica."
+  },
+  "services": {
+    "title": "Servicii",
+    "description": "Descopera serviciile de psihoterapie pe care le ofer."
+  },
+  "pricing": {
+    "title": "Tarife",
+    "description": "Informatii despre costurile sedintelor de psihoterapie.",
+    "perSession": "pe sedinta",
+    "package": "pachet"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Trimite-mi un mesaj si te voi contacta in cel mai scurt timp.",
+    "form": {
+      "name": "Nume complet",
+      "email": "Adresa de email",
+      "phone": "Telefon (optional)",
+      "message": "Mesajul tau",
+      "submit": "Trimite mesajul",
+      "success": "Mesajul tau a fost trimis cu succes!",
+      "error": "A aparut o eroare. Te rog incearca din nou."
+    }
+  },
+  "booking": {
+    "title": "Programare",
+    "description": "Alege o data si o ora convenabila pentru tine.",
+    "selectDate": "Selecteaza data",
+    "selectTime": "Selecteaza ora",
+    "selectService": "Selecteaza serviciul",
+    "yourDetails": "Datele tale",
+    "confirm": "Confirma programarea",
+    "success": "Programarea ta a fost inregistrata!",
+    "error": "A aparut o eroare. Te rog incearca din nou."
+  },
+  "footer": {
+    "copyright": "Toate drepturile rezervate.",
+    "privacy": "Politica de confidentialitate",
+    "terms": "Termeni si conditii"
+  }
+}
