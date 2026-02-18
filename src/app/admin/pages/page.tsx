@@ -8,10 +8,7 @@ import {
   CardContent,
   List,
   ListItem,
-  ListItemButton,
   ListItemText,
-  ListItemSecondaryAction,
-  IconButton,
   Skeleton,
   Chip,
 } from '@mui/material';
@@ -96,33 +93,35 @@ export default function AdminPagesPage() {
                 <ListItem
                   key={page.slug}
                   divider={index < mergedPages.length - 1}
-                  disablePadding
+                  component={NextLink}
+                  href={`/admin/pages/${page.slug}`}
+                  sx={{
+                    textDecoration: 'none',
+                    color: 'inherit',
+                    '&:hover': {
+                      bgcolor: 'action.hover',
+                    },
+                    cursor: 'pointer',
+                    py: 2,
+                    px: 2,
+                  }}
                 >
-                  <ListItemButton
-                    component={NextLink}
-                    href={`/admin/pages/${page.slug}`}
-                  >
-                    <ListItemText
-                      primary={
-                        <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                          {page.title.ro}
-                          {!page.hasContent && (
-                            <Chip label="Fara continut" size="small" variant="outlined" />
-                          )}
-                        </Box>
-                      }
-                      secondary={
-                        page.updatedAt
-                          ? `Ultima modificare: ${formatDate(page.updatedAt)}`
-                          : 'Nu a fost editat inca'
-                      }
-                    />
-                    <ListItemSecondaryAction>
-                      <IconButton edge="end">
-                        <EditIcon />
-                      </IconButton>
-                    </ListItemSecondaryAction>
-                  </ListItemButton>
+                  <ListItemText
+                    primary={
+                      <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                        {page.title.ro}
+                        {!page.hasContent && (
+                          <Chip label="Fara continut" size="small" variant="outlined" />
+                        )}
+                      </Box>
+                    }
+                    secondary={
+                      page.updatedAt
+                        ? `Ultima modificare: ${formatDate(page.updatedAt)}`
+                        : 'Nu a fost editat inca'
+                    }
+                  />
+                  <EditIcon color="action" />
                 </ListItem>
               ))}
             </List>
